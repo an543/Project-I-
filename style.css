@@ -7,7 +7,7 @@ h1	{ color:#FF851B;
       margin-left: 10px;
 		}
 
-h2	{ 	color:#FF851B0; 
+h2	{ 	color:#F851B0; 
 		font-weight: bold; 
 		font-size: 1.5em;
 	
@@ -29,12 +29,13 @@ ol	{	font-style: italic;
 a 	{	text-decoration: none;
 		color: #AAAAAA;
 		}
-.home {
-	padding-right:25px;
-}
+
 p	{ font-size: 1em;
 		}
 
+.home {
+	padding-right:25px;
+}
 
 #icon { border: 3px solid #FFD500;
 			padding: 10px 8px 10px 8px;
@@ -131,11 +132,11 @@ p	{ font-size: 1em;
 		overflow: auto;
 			}
 	.active, img{ width: 100%}
-#footer p{
-	text-decoration:none;
+	#footer p{
+		text-decoration:none;
 	
 	
-}
+	}
 }
 
 
