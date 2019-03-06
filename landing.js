@@ -23,7 +23,7 @@
 		}
 
 		// Run function every mstime seconds
-		setTimeout("whatever()", mstime);
+		setInterval("whatever()", mstime);
 	}
 	
 	// Run function when page loads
