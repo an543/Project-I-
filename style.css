@@ -1,4 +1,5 @@
-body { background-color:#85144B; 
+html, body { 
+		background-color:#85144B; 
        color:#FF851B; 
        font-family: Arial, Verdana, sans-serif;
 		
@@ -17,49 +18,64 @@ h3	{	color:#121110;
 		font-weight: bold;
 	
 		}
-ul	{	font-weight: bold;
-		padding : 10px 20px 10px 20px; 
-		}
-ol	{	font-style: italic;
-		list-style-type: none;
-		display: inline;
-		padding: 20px;
-		
-		}
-a 	{	text-decoration: none;
-		color: #AAAAAA;
-		}
-.home {
+.home, .product {
 	padding-right:25px;
 }
 p	{ font-size: 1em;
 		}
-
-
-#icon { border: 3px solid #FFD500;
-			padding: 10px 8px 10px 8px;
-			box-shadow: 5px 5px 5px #FFD500;
-			}
-
-
-#wrapper1{
-			width : 80%;
-			min-width: 960px;
-			margin-left:auto;
-			margin-right:auto;
-			}
-#leftCol{	float: left; 
-			margin: 10px;
+a {
 			
-			}
-#rightCol{ padding : 10px 8px 10px 8px;
-			margin-left: 155px;
-            background-color: #397F43;
-            color: #000000;
-			overflow: auto;
-			}
-#header { border: solid white 3px;
+		}
+#product-container{ 
+			width: 1024px;
+			margin: auto;
+			display: flex;
+			min-height: 100%;
+			background-color: white;
+}
+.drop-list{
+			flex: 0 0 150px;
+			min-height: 100%;
+			background-color: gray;	
+}
+.drop-list a{
+	display: block;
+	padding: 15px;
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+.drop-list a:hover {
+	color: red;
+}
+#content-product {
+	flex: 1 1 auto;
+	margin: 10px;
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+#content-product .hat {
+	height: 195px;
+	flex: 0 0 195px;
+	border: 3px solid clear;
+	margin: 25px;
+}			
+			
+
+#header{border: solid white 3px;
+		
+		
 	
+}
+#header img {display: flex;
+	
+	
+}
+#header a{display: inline;
+		text-decoration: none;
+		color: #AAAAAA;
 }
 #main{ 	padding : auto;
 		border: solid red 3px;
@@ -67,6 +83,10 @@ p	{ font-size: 1em;
         color: #000000;
 		overflow: auto;
 			}
+img {
+	height: 100%;
+	width:100%;
+}
 #footer { border: solid yellow 3px;
 		color: blue;
 		background-color: gray;
@@ -80,62 +100,97 @@ p	{ font-size: 1em;
 }
 /**********1366px wide - Large Desktop***********/
 @media only screen and (max-width: 1366px) {
-  body {
-    background-color: blue;
-  }
-  #main{ padding : auto;
-		border: solid red 3px;
-        background-color: #397F43;
-        color: #DDDDDD;
-		overflow: auto;
-			}
-	.active, img{ width: 100%}
-}
+#product-container {border: solid cyan 3px; 
+		flex-direction: column;
+		width: 900px;
+	}
+.drop-list {
+		min-height: auto;
+		flex: 0 0 35px;
+	}
+
+.drop-list a {
+		display: inline-block;
+	}
+
+
+
+
+
 /**********1024px wide - Small Desktop***********/
 @media only screen and (max-width: 1024px) {
   body {
     background-color: #001f3f;
   }
-  #main{ padding : auto;
-		border: solid red 3px;
-        background-color: #397F43;
-        color: #DDDDDD;
-		overflow: auto;
-			}
-	.active, img{ width: 100%}
+ 
+.drop-list {
+		min-height: auto;
+		flex: 0 0 35px;
+	}
+
+.drop-list a {
+		display: inline-block;
+	}	
 }
 
 /**********768px wide - Tablet***********/
 @media only screen and (max-width: 768px) {
-  body {
-    background-color: #FF4136;
+ body {
+    background-color: yellow;
   }
-  #main{ padding : auto;
-		border: solid red 3px;
-        background-color: #397F43;
-        color: #AAAAAA;
-		overflow: auto;
-			}
-	.active, img{ width: 100%}
+	
+#product-container {border: solid purple 3px; 
+		width: 758px;
+	}
+
+.drop-list {
+		min-height: auto;
+		flex: 0 0 35px;
+	}
+
+.drop-list a {
+		display: inline-block;
+	}		
+#footer p{
+	display: block;
+}
 }
 
 /**********411px wide - Phone***********/
 @media only screen and (max-width: 411px) {
-  body {
-    background-color: #01FF70;
+body {
+    background-color: red;
   }
-  #main{ padding : auto;
-		border: solid red 3px;
-        background-color: #397F43;
-        color: #AAAAAA;
-		overflow: auto;
-			}
-	.active, img{ width: 100%}
+
+
+#product-container {border: solid black 3px; 
+		margin: 0 15px;
+		width: calc(100% - 30px);
+	}
+
+#content-product {
+		width: calc(100% - 50px);
+		
+	}
+
+#content-product .hat {
+		
+		
+		
+	}
+.drop-list {
+		min-height: auto;
+		flex: 0 0 35px;
+	}
+
+.drop-list a {
+		display: inline-block;
+	}
 #footer p{
-	text-decoration:none;
-	
-	
+	display: block;
 }
+
+
 }
 
 
