@@ -1,8 +1,7 @@
-html, body { 
-		background-color:#85144B; 
-       color:#FF851B; 
-       font-family: Arial, Verdana, sans-serif;
-		
+body { 
+			color:#FF851B; 
+			font-family: Roboto Slab,Times, serif;
+			padding: 0px 20px 0px 20px;
 		}
 h1	{ color:#FF851B; 
       margin-left: 10px;
@@ -23,20 +22,21 @@ h3	{	color:#121110;
 }
 p	{ font-size: 1em;
 		}
-a {
-			
-		}
+
 #product-container{ 
 			width: 1024px;
 			margin: auto;
 			display: flex;
 			min-height: 100%;
-			background-color: white;
+			
+}
+.filter-wrapper {
+	display: flex;
+	margin: 15px 0;
 }
 .drop-list{
 			flex: 0 0 150px;
-			min-height: 100%;
-			background-color: gray;	
+			display: inline;
 }
 .drop-list a{
 	display: block;
@@ -63,22 +63,15 @@ a {
 	margin: 25px;
 }			
 			
-
-#header{border: solid white 3px;
-		
-		
-	
-}
 #header img {display: flex;
 	
 	
 }
 #header a{display: inline;
 		text-decoration: none;
-		color: #AAAAAA;
+	
 }
 #main{ 	padding : auto;
-		border: solid red 3px;
         background-color: #397F43;
         color: #000000;
 		overflow: auto;
@@ -87,11 +80,8 @@ img {
 	height: 100%;
 	width:100%;
 }
-#footer { border: solid yellow 3px;
+#footer { 
 		color: blue;
-		background-color: gray;
-		
-
 }
 #footer p{
 	display: inline;
@@ -100,7 +90,7 @@ img {
 }
 /**********1366px wide - Large Desktop***********/
 @media only screen and (max-width: 1366px) {
-#product-container {border: solid cyan 3px; 
+#product-container {
 		flex-direction: column;
 		width: 900px;
 	}
@@ -109,7 +99,7 @@ img {
 		flex: 0 0 35px;
 	}
 
-.drop-list a {
+.drop-list option {
 		display: inline-block;
 	}
 
@@ -119,27 +109,23 @@ img {
 
 /**********1024px wide - Small Desktop***********/
 @media only screen and (max-width: 1024px) {
-  body {
-    background-color: #001f3f;
-  }
+
  
 .drop-list {
 		min-height: auto;
 		flex: 0 0 35px;
 	}
 
-.drop-list a {
+.drop-list option {
 		display: inline-block;
 	}	
 }
 
 /**********768px wide - Tablet***********/
 @media only screen and (max-width: 768px) {
- body {
-    background-color: yellow;
-  }
+
 	
-#product-container {border: solid purple 3px; 
+#product-container {
 		width: 758px;
 	}
 
@@ -148,7 +134,7 @@ img {
 		flex: 0 0 35px;
 	}
 
-.drop-list a {
+.drop-list option {
 		display: inline-block;
 	}		
 #footer p{
@@ -158,12 +144,9 @@ img {
 
 /**********411px wide - Phone***********/
 @media only screen and (max-width: 411px) {
-body {
-    background-color: red;
-  }
 
 
-#product-container {border: solid black 3px; 
+#product-container {
 		margin: 0 15px;
 		width: calc(100% - 30px);
 	}
@@ -183,7 +166,7 @@ body {
 		flex: 0 0 35px;
 	}
 
-.drop-list a {
+.drop-list option {
 		display: inline-block;
 	}
 #footer p{
