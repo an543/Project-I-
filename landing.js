@@ -11,7 +11,7 @@
 	// Change Image
 	function whatever(){
 		//set src to image url stored in image array
-		document.active.src = images[i];
+		document.hatSlides.src = images[i];
 
 		// Check If index is less than image array size minus 1
 		if(i < images.length - 1){
