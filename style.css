@@ -23,7 +23,7 @@ h3	{	color:#121110;
 p	{ font-size: 1em;
 		}
 		
-#slideshow-container{border: solid red 3px;
+#slideshow{border: solid red 3px;
 	 max-width: 1300px;
 	margin: auto;
 	vertical-align: middle;
