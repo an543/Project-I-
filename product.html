@@ -20,12 +20,40 @@
 			</div>
 			
 			
-			<div id="product-container">
-				<aside class='drop-list'>  <!--Elizabelth, you can add some drop list here as the instruction has described. -->
-					<a>DROP LIST TYPE</a></li>
-					<a>DROP LIST BY CONTINENTS</a></li>
-					<a> DROP PRICE </a> 
-				</aside>
+			<div id="product-container" class="filter-wrapper">
+				
+				<div class='drop-list' class='form-group'style="margin-right: 20px;">  <!--Elizabelth, you can add some drop list here as the instruction has described. -->
+					<label for="Continents">Filter By Continents</label>
+					<select id="Continents" name="Continents">
+						<option value="*">Select Continent</option>
+						<option value="Asia">Asia</option>
+						<option value="North America">North America</option>
+						<option value="Europe">Europe</option>
+						
+					</select>
+				</div>
+				<div class='drop-list' class="form-group" style="margin-right: 20px;">
+					<label for="Types">Filter By Types</label>
+					<select id="Types" name="Types">
+						<option value="*">Select Type</option>
+						<option value="Traditional">Traditional</option>
+						<option value="Luxury">Luxury</option>
+						<option value="Sporty">Sporty</option>
+						
+					</select>
+					
+				</div>
+				
+				<div class='drop-list' class='form-group'style="margin-right: 20px;">  <!--Elizabelth, you can add some drop list here as the instruction has described. -->
+					<label for="sortby">Sort By Title</label>
+					<select id="sortby" name="sortby">
+						<option value="title">Title</option>
+						<option value="price">Price</option>
+						
+					</select>
+				</div>
+				
+			</div>
 			
 			
 				<div id="content-product">  <!--This content-product, we can sort them nicely by using CSS, if we have more time, we can make each product has it's own page -->
@@ -79,9 +107,9 @@
 						
 				</div>
 
-			
-		
+				<div id="content-product-replace"></div>
 			</div>
+			
 			<div id ="footer">  <!-- this main body has yellow border -->
 				<p>3D HAT INC. </p>
 				<p>Phone: 1-800-222-3333 </p>
@@ -89,5 +117,6 @@
 				
 			</div>
 		</div>
+		<script type="text/javascript" src="product.js"></script>
 	</body>
 </html>

@@ -22,18 +22,27 @@ h3	{	color:#121110;
 }
 p	{ font-size: 1em;
 		}
+		
+#slideshow-container{border: solid red 3px;
+	 max-width: 1300px;
+	margin: auto;
+	vertical-align: middle;
+}
 
 #product-container{ 
 			width: 1024px;
 			margin: auto;
 			display: flex;
 			min-height: 100%;
-			background-color: #E2E4F1 ;
+			
+}
+.filter-wrapper {
+	display: flex;
+	margin: 15px 0;
 }
 .drop-list{
 			flex: 0 0 150px;
-			
-			background-color: gray;	
+			display: inline;
 }
 .drop-list a{
 	display: block;
@@ -54,6 +63,21 @@ p	{ font-size: 1em;
 	flex-wrap: wrap;
 }
 #content-product .hat {
+	height: 195px;
+	flex: 0 0 195px;
+	border: 3px solid clear;
+	margin: 25px;
+}
+
+#content-product-replace {
+	flex: 1 1 auto;
+	margin: 10px;
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#content-product-replace .hat {
 	height: 195px;
 	flex: 0 0 195px;
 	border: 3px solid clear;
@@ -96,7 +120,7 @@ img {
 		flex: 0 0 35px;
 	}
 
-.drop-list a {
+.drop-list option {
 		display: inline-block;
 	}
 
@@ -113,7 +137,7 @@ img {
 		flex: 0 0 35px;
 	}
 
-.drop-list a {
+.drop-list option {
 		display: inline-block;
 	}	
 }
@@ -131,7 +155,7 @@ img {
 		flex: 0 0 35px;
 	}
 
-.drop-list a {
+.drop-list option {
 		display: inline-block;
 	}		
 #footer p{
@@ -157,13 +181,15 @@ img {
 		
 		
 		
-	}
+}
+
+	
 .drop-list {
 		min-height: auto;
 		flex: 0 0 35px;
 	}
 
-.drop-list a {
+.drop-list option {
 		display: inline-block;
 	}
 #footer p{
@@ -172,7 +198,6 @@ img {
 
 
 }
-
 
 
 
